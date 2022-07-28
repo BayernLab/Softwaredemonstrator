@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon-57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon-152.png">
+    <meta name="application-name" content="<%= htmlWebpackPlugin.options.gameName %>" />
+    <meta name="apple-mobile-web-app-title" content="<%= htmlWebpackPlugin.options.gameName %>" />
+    <title><%= htmlWebpackPlugin.options.gameName %></title>
+      <style>
+      html,
+      body {
+        height: 100%;
+        background-color: #000000;
+        margin: 0;
+          padding: 0;
+          image-rendering: optimizeQuality;                  /* Chrome 41 */
+      }
+    </style>
+      <noscript>Please enable javascript to continue using this application.</noscript>
+
+    </head>
+    <body>
+      <div id="phaser-game"></div>
+    </body>
+  </html>

@@ -1,0 +1,36 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb-base",
+        "airbnb-typescript/base",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "overrides": [],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": [
+            "./tsconfig.json"
+        ]
+    },
+    "rules": {
+        "class-methods-use-this": "off",
+        "max-len": 0,
+        "linebreak-style": 0,
+        "no-param-reassign": "warn",
+        "comma-dangle": 0,
+        "operator-linebreak": [
+            "error",
+            "after"
+        ],
+        "no-plusplus": [
+            "error",
+            {
+                "allowForLoopAfterthoughts": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "bayernlabs-software-demonstrator",
+  "version": "1.0.0",
+  "main": "src/main.ts",
+  "author": {
+    "name": "Peter Bludau",
+    "url": "https://github.com/ptrbld"
+  },
+  "scripts": {
+    "start": "webpack serve --config webpack/webpack.dev.js",
+    "build": "rimraf dist && webpack --config webpack/webpack.prod.js",
+    "bundle": "npm run build",
+    "serve": "serve dist",
+    "lint": "eslint src",
+    "doc:generate": "jsdoc -c jsdoc.json -d docs/jsdoc"
+  },
+  "private": true,
+  "dependencies": {
+    "@enable3d/phaser-extension": "0.25.3",
+    "blockly": "^8.0.4",
+    "js-interpreter": "^3.0.1",
+    "lodash": "^4.17.21",
+    "matter-js": "^0.17.1",
+    "phaser": "3.55.2",
+    "phaser3-rex-plugins": "1.1.74",
+    "three": "^0.144.0",
+    "uuid": "^9.0.0",
+    "vm-browserify": "1.1.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "better-docs": "^2.7.2",
+    "copy-webpack-plugin": "^10.1.0",
+    "eslint": "^8.29.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jsdoc": "^4.0.0",
+    "prettier": "^2.8.0",
+    "rimraf": "^3.0.2",
+    "serve": "^14.1.2",
+    "taffydb": "^2.7.3",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.9.3",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0",
+    "workbox-webpack-plugin": "^6.4.2"
+  }
+}
