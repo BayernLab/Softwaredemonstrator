@@ -369,8 +369,9 @@ export default class Player {
     this.currentCommand = new Command(func);
     if (!this.debug) {
       // If not in debug mode start the command automatically.
-      this.executeStep();
+      return this.executeStep();
     }
+    return null;
   }
 
   finishCommand(shouldFail: boolean) {
@@ -409,8 +410,9 @@ export default class Player {
         }
       });
       this.instructor.highlightCodeLines(currentLines);
-      this.currentCommand.begin();
+      return this.currentCommand.begin();
     }
+    return null;
   }
 
   isReady(): boolean {
